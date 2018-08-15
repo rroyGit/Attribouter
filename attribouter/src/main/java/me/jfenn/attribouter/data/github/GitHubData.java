@@ -252,7 +252,7 @@ public abstract class GitHubData {
                 if (cache != null) {
                     callInit(cache);
                 } else continueHttpThread = true;
-            }
+            }else continueHttpThread = true;
         }
 
         private void doHttpConnection(){
